@@ -6,21 +6,21 @@ postMerge :
   
   subModules:          #Not to be changed
       
-      - name: kernel      
-        path : "./packages/__tests__"
-        pattern: 
-          - "./dist/esm/__tests__/1-kernel/**/*.spec.js"
-        
-        framework : mocha
-        configFile : ".mocharc.json"
-      
-#       - name: runtime      
+#       - name: kernel      
 #         path : "./packages/__tests__"
 #         pattern: 
-#           - "./dist/esm/__tests__/2-runtime/*.spec.js"
+#           - "./dist/esm/__tests__/1-kernel/**/*.spec.js"
         
 #         framework : mocha
 #         configFile : ".mocharc.json"
+      
+      - name: runtime      
+        path : "./packages/__tests__"
+        pattern: 
+          - "./dist/esm/__tests__/2-runtime/*.spec.js"
+        
+        framework : mocha
+        configFile : ".mocharc.yml"
         
         
         
